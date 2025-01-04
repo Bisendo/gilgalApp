@@ -28,7 +28,7 @@ const Dashboard = () => {
           <ul className="space-y-4">
             <li>
               <a
-                href="/dashboard"
+                href="/admin/dashboard"
                 className="flex items-center px-4 py-2 hover:bg-blue-700 rounded-lg transition-colors"
               >
                 <FiHome className="text-xl mr-4" />
@@ -60,15 +60,6 @@ const Dashboard = () => {
               >
                 <FiCalendar className="text-xl mr-4" />
                 Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="/posts"
-                className="flex items-center px-4 py-2 hover:bg-blue-700 rounded-lg transition-colors"
-              >
-                <FiHome className="text-xl mr-4" />
-                Posts
               </a>
             </li>
             <li>
@@ -111,50 +102,43 @@ const Dashboard = () => {
           {/* Adjusted padding to accommodate the fixed navbar */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Upcoming Events</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Total Ministries</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Total :{}</h3>
+
               <p className="text-gray-600 mb-4">
-                View all upcoming church events and services.
+                View and manage all Ministries .
               </p>
               <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                View Events
+                View Ministries
               </button>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Recent Donations</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4"> Total Service </h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Total :{}</h3>
+
               <p className="text-gray-600 mb-4">
-                Manage and track all recent donations.
+                View and manage all services.
               </p>
               <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                View Donations
+                View Services
               </button>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Member Management</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Total Contacts</h3>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Total :{}</h3>
+
               <p className="text-gray-600 mb-4">
-                View and manage church members.
+                View  and manage  all Contacts.
               </p>
               <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                Manage Members
+                View Contacts
               </button>
             </div>
           </section>
 
-          {/* Analytics Overview Section */}
-          <section className="mt-8 bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Dashboard Analytics</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-gray-200 p-4 rounded-lg shadow-md">
-                <h4 className="text-lg font-semibold text-gray-800">Total Donations</h4>
-                <p className="text-xl text-gray-700">$12,345</p>
-              </div>
-              <div className="bg-gray-200 p-4 rounded-lg shadow-md">
-                <h4 className="text-lg font-semibold text-gray-800">Total Members</h4>
-                <p className="text-xl text-gray-700">250</p>
-              </div>
-            </div>
-          </section>
+        
         </main>
       </div>
     </div>
