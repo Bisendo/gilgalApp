@@ -25,6 +25,12 @@ app.use('/autho',adminRouter);
 
 const ministriesRoute = require('./routes/Ministries');
 app.use('/ministries', ministriesRoute);
+
+
+const eventsRoutes = require('./routes/Events');
+app.use('/events', eventsRoutes);
+
+
 // Serve static images from the 'images' folder in the root directory
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 

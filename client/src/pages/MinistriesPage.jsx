@@ -2,12 +2,24 @@ import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import axios from 'axios';
 import Navbar from '../Components/Navibar'; // Import Navbar
-import BackgroundImage from "../assets/images/six.jpg";
+import BackgroundImage1 from "../assets/images/six.jpg";
+import BackgroundImage2 from "../assets/images/one.jpg"; // Add a second background image
 
 const MinistriesPage = () => {
   const [ministries, setMinistries] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [backgroundImage, setBackgroundImage] = useState(BackgroundImage1); // Default background image
+
+  useEffect(() => {
+    // Change background after 5 seconds
+    const timer = setTimeout(() => {
+      setBackgroundImage(BackgroundImage2); // Change to the second background image
+    }, 5000);
+
+    // Cleanup timer when component unmounts or if background changes
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     // Fetch ministries from the backend using axios
@@ -35,7 +47,7 @@ const MinistriesPage = () => {
       <div className="mt-24"> {/* Adjusted margin to separate Navbar and Hero section */}
         <section
           className="relative bg-cover bg-center h-[500px] rounded-lg overflow-hidden"
-          style={{ backgroundImage: `url(${BackgroundImage})` }}
+          style={{ backgroundImage: `url(${backgroundImage})` }} // Set background dynamically
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="relative z-10 text-center text-white h-full flex flex-col items-center justify-center">
