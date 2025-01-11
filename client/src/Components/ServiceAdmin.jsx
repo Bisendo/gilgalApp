@@ -59,6 +59,7 @@ const AdminServicePage = () => {
     try {
       await axios.delete(`http://localhost:4040/service/${id}`);
       setServices(services.filter(service => service.id !== id)); // Remove deleted service from the state
+      alert("Are you sure  want to delete")
     } catch (error) {
       console.error("Error deleting service:", error);
     }

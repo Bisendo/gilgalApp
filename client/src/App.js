@@ -6,7 +6,7 @@ import About from './pages/About';
 import MinistriesPage from './pages/MinistriesPage';
 import EventsPage from './pages/EventsPage';
 import Contact from './pages/Contact';
-import Giving from './Components/Giving';
+import Giving from './pages/Giving';
 import Dashboard from './Components/AdminDashboard';
 import AdminLogin from './Components/AdminLogin';
 import AdminEventPage from './Components/AdminEventPage';

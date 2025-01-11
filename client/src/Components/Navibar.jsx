@@ -16,8 +16,8 @@ const Navbar = () => {
         {/* Church Name and Icon */}
         <div className="flex items-center space-x-4">
           {/* Icon for Church Logo */}
-          <div className="w-12 h-12 bg-blue-500 rounded-full flex justify-center items-center text-white">
-            <span className="text-2xl font-bold">GR</span>
+          <div className="w-12 h-12 bg-yellow-400 rounded-full flex justify-center items-center text-white">
+            <span className="text-2xl text-blue-800 font-bold">GR</span>
           </div>
           <h1 className="text-2xl font-bold">Gilgal Revival Church</h1>
         </div>

@@ -32,12 +32,12 @@ router.get("/", async (req, res) => {
     res.json(services);
   } catch (error) {
     console.error("Error fetching services:", error);
-    res.status(500).json({ error: "Failed to fetch services" });
+    res.status(500).json({ error: "An error occurred while fetching services." });
   }
 });
 
 // Get a service by ID
-router.get("/:id", async (req, res) => {
+router.get("/byId/:id", async (req, res) => {
   const id = req.params.id;
   try {
     const service = await Services.findByPk(id);
@@ -47,7 +47,7 @@ router.get("/:id", async (req, res) => {
     res.json(service);
   } catch (error) {
     console.error("Error fetching service:", error);
-    res.status(500).json({ error: "Failed to fetch service" });
+    res.status(500).json({ error: "An error occurred while fetching the service." });
   }
 });
 
@@ -72,7 +72,6 @@ router.post("/", upload.single("image"), async (req, res) => {
     res.status(500).json({ error: "Failed to create service" });
   }
 });
-
 
 // Update a service by ID with image upload
 router.put("/:id", upload.single("image"), async (req, res) => {
@@ -114,6 +113,21 @@ router.delete("/:id", async (req, res) => {
   } catch (error) {
     console.error("Error deleting service:", error);
     res.status(500).json({ error: "Failed to delete service" });
+  }
+});
+
+
+
+
+
+// Get the total count of services
+router.get("/count", async (req, res) => {
+  try {
+    const totalServices = await Services.count();
+    res.status(200).json({ total: totalServices });
+  } catch (error) {
+    console.error("Error fetching services count:", error);
+    res.status(500).json({ error: "An error occurred while fetching the services count." });
   }
 });
 

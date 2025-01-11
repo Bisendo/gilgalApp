@@ -123,3 +123,16 @@ router.get('/count', async (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+// Get all services
