@@ -107,7 +107,7 @@ const MinistriesPage = () => {
             <div>
               <h4 className="text-xl font-semibold mb-4">About Us</h4>
               <p className="text-white text-sm">
-                We are a church committed to serving our community and growing in faith. Join us for our services and events.
+                We are a  church committed to serving our community and growing in faith. Join us for our services and events.
               </p>
             </div>
 
@@ -127,7 +127,7 @@ const MinistriesPage = () => {
               <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
               <p className="text-white text-sm">
                 Email: info@church.com <br />
-                Phone: +123 456 7890
+                Phone: +255 621 690 364
               </p>
             </div>
 
