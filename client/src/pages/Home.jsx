@@ -9,7 +9,7 @@ const Home = () => {
   const [services, setServices] = useState([]);
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
   const videoId = "B9SpPMSHvmM";
-  const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
+  const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}`;
   const iframeRef = useRef(null);
 
   useEffect(() => {
