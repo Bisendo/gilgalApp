@@ -12,7 +12,7 @@ const Footer = () => {
             <p className="text-sm">
               Join us for services and events throughout the week. We're here to support your spiritual journey.
             </p>
-            <p className="text-sm">© 2024 Gilgal Revival Church. All Rights Reserved.</p>
+            <p className="text-sm">© 2025 Gilgal Revival Church. All Rights Reserved.</p>
           </div>
 
           {/* Quick Links */}
@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-4">
-        <p className="text-sm">© 2024 Gilgal Revival Church | All Rights Reserved</p>
+        <p className="text-sm">© 2025 Gilgal Revival Church | All Rights Reserved</p>
       </div>
     </footer>
   );
